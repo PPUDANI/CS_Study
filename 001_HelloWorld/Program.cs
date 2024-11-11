@@ -1,4 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿// using : C++과 같이 System이라는 형식 지정자를 안쓰겠다는 뜻.
+// 
 using System;
 using static System.Console;
 
@@ -10,11 +11,11 @@ namespace _001_HelloWorld
         {
             if (args.Length == 0)
             {
-                Console.WriteLine("사용법 : HelloWorld.exe <이름>");
+                WriteLine("사용법 : HelloWorld.exe <이름>");
                 return;
             }
 
-            Console.WriteLine("Hello, {0}!", args[1]);
+            WriteLine("Hello, {0}!", args[1]);
         }
     }
 }

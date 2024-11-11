@@ -7,6 +7,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01.New_Study", "01.New_Stud
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "001_HelloWorld", "001_HelloWorld\001_HelloWorld.csproj", "{02B7CA70-4B95-4B06-9A54-38ABEDC69196}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "000_CSharpBasic", "000_CSharpBasic\000_CSharpBasic.csproj", "{04210B99-272B-4FCA-8E4F-8C73FD5CC864}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,12 +19,17 @@ Global
 		{02B7CA70-4B95-4B06-9A54-38ABEDC69196}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{02B7CA70-4B95-4B06-9A54-38ABEDC69196}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{02B7CA70-4B95-4B06-9A54-38ABEDC69196}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04210B99-272B-4FCA-8E4F-8C73FD5CC864}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04210B99-272B-4FCA-8E4F-8C73FD5CC864}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04210B99-272B-4FCA-8E4F-8C73FD5CC864}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04210B99-272B-4FCA-8E4F-8C73FD5CC864}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{02B7CA70-4B95-4B06-9A54-38ABEDC69196} = {399DCF96-9760-4AF2-91E4-3257C7685523}
+		{04210B99-272B-4FCA-8E4F-8C73FD5CC864} = {399DCF96-9760-4AF2-91E4-3257C7685523}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {539A9BD2-522D-4917-BB62-C64A5EE944F9}
