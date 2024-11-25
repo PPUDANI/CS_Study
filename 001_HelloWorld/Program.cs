@@ -5,7 +5,7 @@ using static System.Console;
 
 namespace _001_HelloWorld
 {
-    class HelloWorld
+    class MainApp
     {
         static void Main(string[] args)
         {
