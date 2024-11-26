@@ -7,23 +7,27 @@ namespace _002_Variable
     {
         static void Main(string[] args)
         {
-            sbyte a = -10;
-            byte b = 40;
+            // Integer Variables
 
-            Console.WriteLine($"a={a}, b={b}");
+            // 1Byte Integer
+            sbyte Signed_Byte = -10;
+            byte Unsigned_Byte = 40;
+            Console.WriteLine($"Signed_Byte={Signed_Byte}, Unsigned_Byte={Unsigned_Byte}");
 
-            short c = -30000;
-            ushort d = 60000;
-            Console.WriteLine($"c={c}, d={d}");
+            // 2Byte Integer
+            short Signed_Short = -30000;
+            ushort Unsigned_Short = 60000;
+            Console.WriteLine($"Signed_Short={Signed_Short}, Unsigned_Short={Unsigned_Short}");
 
-            int e = -10_000_000;
-            int f = 300_000_000;
-            Console.WriteLine($"e={e}, f={f}");
+            // 4Byte Integer
+            int Int1 = -10_000_000;
+            int Int2 = 300_000_000;
+            Console.WriteLine($"Int1={Int1}, Int2={Int2}");
 
-            long g = -500_000_000_000;
-            long h = 2_000_000_000_000_000_000;
-            Console.WriteLine($"g={g}, h={h}");
-
+            // 8Byte Integer
+            long Long1 = -500_000_000_000;
+            long Long2 = 2_000_000_000_000_000_000;
+            Console.WriteLine($"Long1={Long1}, Long2={Long2}");
         }
     }
 }
