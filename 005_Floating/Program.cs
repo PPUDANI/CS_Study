@@ -18,13 +18,13 @@ namespace _005_Floating
 
 
             float float_num = 0.1f;
-            double double_num = 0.1f;
+            double double_num = 0.1;
             decimal decimal_num = 0.1m;
-            for (int i = 0; i < 10000; ++i)
+            for (int i = 0; i < 2000; ++i)
             {
-                float_num += 0.1f;
-                double_num += 0.1f;
-                decimal_num += 0.1m;
+                float_num += 0.5f;
+                double_num += 0.5;
+                decimal_num += 0.5m;
             }
 
             Console.WriteLine($"<Float>");
