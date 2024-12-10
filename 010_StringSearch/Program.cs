@@ -68,37 +68,11 @@ namespace _010_StringSearch
 
             ////////////////////////////////////////////////////////////////////////////////////////
 
-            // Substring()
-            WriteLine(greeting.Substring(0, 5));
-            WriteLine(greeting.Substring(5));
-            WriteLine();
+            
 
-            // Split()
-            string[] arr = greeting.Split(new string[] {" "}, StringSplitOptions.None);
-            foreach (string Element in arr)
-                WriteLine("{0}", Element);
-            WriteLine();
+            
 
-            // Format()
-            // {1, 2, 3}
-            // 1 : 인자 순서[첨자]
-            // 2 : 맞춤(-는 왼쪽맞춤 + 는 오른쪽 맞춤)
-            // 3 : 변환 서식 지정 문자열
-            //   - D = 10진수
-            //   - X = 16진수
-            //   - N = 콤마 구분(123456 -> 123,456)
-            //   - F = 고정소수점(123.45 -> 123.45)
-            //   - E = 지수(123.456789 -> 1.234568E+002)
-            string fmt = "{0, -8}| {1, -10}| {2, -7}| {3, -7}| {4, -5}";
 
-            WriteLine(fmt, "Name", "Line", "Kill", "Death", "Assist");
-            WriteLine("-----------------------------------------------");
-            WriteLine(fmt, "Garen", "Top", "6", "7", "8");
-            WriteLine(fmt, "Lux", "Mid", "2", "4", "6");
-            WriteLine(fmt, "Gragas", "Jungle", "10", "5", "15");
-            WriteLine(fmt, "Varus", "AD", "1", "108", "0");
-            WriteLine(fmt, "Leona", "Suport", "128", "0", "3");
-  
         }
     }
 }
