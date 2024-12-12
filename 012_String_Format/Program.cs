@@ -55,10 +55,20 @@ namespace _012_String_Format
 
             // HH(24) hh(12)
             WriteLine("{0:HH:mm:ss}", dt);
-            WriteLine("{0:hh:mm:ss}", dt);
+            WriteLine("{0:hh:mm:ss}\n", dt);
 
-            int? a = 0;
+            // 보간 : C# 6.0에서 새로 도입된 기능($키워드를 붙여서 사용)
+            int Integer = 123;
+            string Str = "일이삼";
+            float floatNum = 123.45f;
 
+            // 기존 포맷
+            WriteLine("{0,-10:D}{1, -5}{2}", Integer, Str, floatNum);
+
+            // 문자열 보간 포맷
+            WriteLine($"{Integer, -10:D}{Str, -5}{floatNum}");
+
+            string HelloStr = Console;
         }
     }
 }
