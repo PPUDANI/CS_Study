@@ -32,7 +32,6 @@
             // 위 코드와 다르게 연속적이지 않다면 부분적으로 이분탐색을 실행함.(최적화함.)
             // 연속된 값일수록 처리 속도가 뛰어남.
 
-
             // C/C++은 switch에 string을 넣을 수 없지만 C#은 가능함.
             // 문자열 switch는 해시 테이블을 사용하여 상수시간에 처리 가능.
             switch (Menu)
@@ -48,7 +47,7 @@
                     break;
             }
 
-
+            
             Console.Write("Object를 입력하세요 : ");
             Object? obj = null;
             string? str = Console.ReadLine();
