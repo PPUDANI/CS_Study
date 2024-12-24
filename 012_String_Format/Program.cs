@@ -31,13 +31,13 @@ namespace _012_String_Format
 
             WriteLine("Comma: {0:N}", 100000000); // N : 콤마 구분(123456-> 123,456.00)
             WriteLine("Comma: {0:N0}\n", 100000000); // N0 : 콤마 구분(123456-> 123,456.00)
-
+            
             float Point = 123.45f;
             WriteLine("Percision: {0:F}", Point); // Percision : 고정소수점(123.45 -> 123.45)
             WriteLine("Exponential: {0:E}\n", Point); // Exponential : 지수(123.456789 -> 1.234568E+002)
 
             int Bill = 1200000000;
-            WriteLine("Culture: {0:C}\n", Bill);
+            WriteLine("Culture: {0:C}\n", Bill); // Culture : 나라별 돈 구분.
 
             // 날짜값
             DateTime dt = DateTime.Now;
@@ -46,7 +46,7 @@ namespace _012_String_Format
             CultureInfo ciKO = new CultureInfo("ko-KR");
             CultureInfo ciUS = new CultureInfo("en-US");
 
-            WriteLine(dt.ToString("yyyy-MM-dd tt HH:mm:ss (dddd)", ciKO));
+            WriteLine(dt.ToString("yyy-MM-dd tt HH:mm:ss (dddd)", ciKO));
             WriteLine(dt.ToString("yyyy-MM-dd tt HH:mm:ss (dddd)", ciUS));
 
             // ddd(3) dddd(full)
@@ -68,7 +68,6 @@ namespace _012_String_Format
             // 문자열 보간 포맷
             WriteLine($"{Integer, -10:D}{Str, -5}{floatNum}");
 
-            string HelloStr = Console;
         }
     }
 }

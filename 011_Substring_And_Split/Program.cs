@@ -14,10 +14,10 @@ namespace _011_Substring_And_Split
             WriteLine();
 
             // Split()
-            string SplitStr = "ABC, DEF, GHIJ, KL,MNOP";
-            string[] arr = SplitStr.Split(new string[] { ", " }, StringSplitOptions.None);
+            string SplitStr = "ABC, DEF. GHIJ. KL,MNOP";
+            string[] arr = SplitStr.Split(new string[] { ", ", ". " }, StringSplitOptions.None);
             foreach (string Element in arr)
-                WriteLine("{0}", Element);
+                Write("{0}", Element);
             WriteLine();
         }
     }
