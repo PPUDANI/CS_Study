@@ -1,54 +1,46 @@
 ﻿namespace TestCode
 {
-    interface a
+    internal class Object
     {
-        void Run();
-    }
-
-    interface b : a
-    {
-        void Fly();
-    }
-
-    interface c : a
-    {
-        void crouch();
-    }
-
-    interface d : b, c
-    {
-        void drouch();
-    }
-
-    class Fuck : d
-    {
-        public void Run()
+        public void foo()
         {
 
         }
 
-        public void crouch()
+        public virtual void noo()
+        {
+            Console.WriteLine("Object:noo()");
+        }
+
+        public int a;
+    }
+
+    internal class Actor : Object
+    {
+        public void poo()
         {
 
         }
 
-        public void Fly()
+        public override void noo()
         {
-
+            Console.WriteLine("Actor:noo()");
         }
 
-        public void drouch()
-        {
-
-        }
+        public int b;
     }
 
     internal class Program
     {
         static void Main(string[] args)
         {
-            Fuck fuck = new Fuck();
-            fuck.Run();
+            Object obj = new Actor();
+            obj.a = 3;
+            // obj.b = 3; ERROR!
+            obj.foo();
+            // obj.poo(); ERROR!
+
+            obj.noo(); // Actor:noo()가 출력됨.
         }
     }
 }

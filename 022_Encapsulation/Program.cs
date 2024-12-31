@@ -2,6 +2,8 @@
 {
     class ClassA
     {
+        // 접근 지정자를 통해 캡술화할 수 있음.
+        // 기본 접근 지정자는 private
         public int a;
         protected int b;
         private int c;
