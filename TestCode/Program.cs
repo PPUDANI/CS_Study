@@ -1,46 +1,21 @@
-﻿namespace TestCode
+﻿namespace MyApp
 {
-    internal class Object
-    {
-        public void foo()
-        {
-
-        }
-
-        public virtual void noo()
-        {
-            Console.WriteLine("Object:noo()");
-        }
-
-        public int a;
-    }
-
-    internal class Actor : Object
-    {
-        public void poo()
-        {
-
-        }
-
-        public override void noo()
-        {
-            Console.WriteLine("Actor:noo()");
-        }
-
-        public int b;
-    }
-
     internal class Program
     {
+        static IEnumerable<int> GenericTest()
+        {
+            yield return 1;
+            yield return 2;
+            yield return 3;
+            yield return 4;
+        }
+
         static void Main(string[] args)
         {
-            Object obj = new Actor();
-            obj.a = 3;
-            // obj.b = 3; ERROR!
-            obj.foo();
-            // obj.poo(); ERROR!
-
-            obj.noo(); // Actor:noo()가 출력됨.
+            foreach (int number in GenericTest())
+            {
+                Console.WriteLine(number);
+            }
         }
     }
 }

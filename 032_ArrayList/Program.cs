@@ -9,7 +9,6 @@ namespace _032_ArrayList
             // ArrayList는 비제네릭 컬렉션으로 구분없이 데이터를 저장할 수 있음. 
             // 값을 잘못 읽을 수도 있어 타입 안정성이 떨어지고, 공통 상속인 object로 받아야 하는데 형변환(박싱) 오버헤드가 큼.
             // 비제네릭 컬렉션은 매우 위험하고 퍼포먼스도 떨어지므로 제네릭 컬렉션인 List<T> 사용이 더 적합함.
-
             ArrayList Ar = new ArrayList();
             
             Console.WriteLine($"Empty -> length: {Ar.Count} Capacity: {Ar.Capacity}");
@@ -43,6 +42,9 @@ namespace _032_ArrayList
 
             Ar.Clear();
             Console.WriteLine($"\nClear -> length: {Ar.Count} Capacity: {Ar.Capacity}");
+
+            // 컬렉션 초기자
+            ArrayList Ar_ColectionInit = new ArrayList() { 1, 2, 3 };
         }
     }
 }

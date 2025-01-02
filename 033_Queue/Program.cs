@@ -10,6 +10,10 @@ namespace _033_Queue
             // 비제네릭 컬렉션.
             Queue B_GenericQ = new Queue();
 
+            // Arr 초기화 가능
+            int[] Arr = { 1, 2, 3 };
+            Queue<int> GenericQ_Arr = new Queue<int>(Arr);
+
             // C# 2.0부터 제네릭 컬렉션들이 도입되어 가능함.
             Queue<int> GenericQ = new Queue<int>();
 
