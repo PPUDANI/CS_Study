@@ -56,7 +56,7 @@ namespace _031_Array
                 int[,] Arr2D_2 = new int[2, 2] { { 1, 2 }, { 3, 4 } };
                 int[,] Arr2D_3 = new int[,] { { 1, 2 }, { 3, 4 } };
                 int[,] Arr2D_4 = { { 1, 2 }, { 3, 4 } };
-
+                int ss = Arr2D_1.Length;
                 Arr2D_1[0, 0] = 1;
                 Arr2D_1[0, 1] = 2;
                 Arr2D_1[1, 0] = 3;
