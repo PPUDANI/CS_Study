@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01.New_Study", "01.New_Study", "{399DCF96-9760-4AF2-91E4-3257C7685523}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00.Language", "00.Language", "{399DCF96-9760-4AF2-91E4-3257C7685523}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "001_HelloWorld", "001_HelloWorld\001_HelloWorld.csproj", "{02B7CA70-4B95-4B06-9A54-38ABEDC69196}"
 EndProject
@@ -78,6 +78,18 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "034_Stack", "034_Stack\034_Stack.csproj", "{23FE5DDF-87CA-4142-AAD5-E72979DF0D27}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Random", "Random\Random.csproj", "{1A1DBC79-6E2C-4C0B-BEE1-F35B62B54260}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01.SOLID", "01.SOLID", "{C8D5274F-AC00-46C7-1F8D-E88E81087A52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_Single Risponsibility Principle", "01_Single Risponsibility Principle\01_Single Risponsibility Principle.csproj", "{965CA2A6-34DD-45E2-859B-AD3060A07779}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_Liskov Substitution Principle", "03_Liskov Substitution Principle\03_Liskov Substitution Principle.csproj", "{AA9461BC-3C0D-464E-BB98-86FC136466DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_Open-Closed Principle", "02_Open-Closed Principle\02_Open-Closed Principle.csproj", "{EA290651-D483-4ED6-9A46-3F84A19964AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_Interface Segregation Principle", "04_Interface Segregation Principle\04_Interface Segregation Principle.csproj", "{B2D2279A-E7C1-47FE-BC92-8D9D50FCDF22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_Dependency Inversion Principle", "05_Dependency Inversion Principle\05_Dependency Inversion Principle.csproj", "{76DAE4B1-88EA-4CAE-94BF-90839E95C950}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -233,6 +245,26 @@ Global
 		{1A1DBC79-6E2C-4C0B-BEE1-F35B62B54260}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A1DBC79-6E2C-4C0B-BEE1-F35B62B54260}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A1DBC79-6E2C-4C0B-BEE1-F35B62B54260}.Release|Any CPU.Build.0 = Release|Any CPU
+		{965CA2A6-34DD-45E2-859B-AD3060A07779}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{965CA2A6-34DD-45E2-859B-AD3060A07779}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{965CA2A6-34DD-45E2-859B-AD3060A07779}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{965CA2A6-34DD-45E2-859B-AD3060A07779}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA9461BC-3C0D-464E-BB98-86FC136466DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA9461BC-3C0D-464E-BB98-86FC136466DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA9461BC-3C0D-464E-BB98-86FC136466DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA9461BC-3C0D-464E-BB98-86FC136466DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA290651-D483-4ED6-9A46-3F84A19964AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA290651-D483-4ED6-9A46-3F84A19964AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA290651-D483-4ED6-9A46-3F84A19964AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA290651-D483-4ED6-9A46-3F84A19964AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2D2279A-E7C1-47FE-BC92-8D9D50FCDF22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2D2279A-E7C1-47FE-BC92-8D9D50FCDF22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2D2279A-E7C1-47FE-BC92-8D9D50FCDF22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2D2279A-E7C1-47FE-BC92-8D9D50FCDF22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76DAE4B1-88EA-4CAE-94BF-90839E95C950}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76DAE4B1-88EA-4CAE-94BF-90839E95C950}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76DAE4B1-88EA-4CAE-94BF-90839E95C950}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76DAE4B1-88EA-4CAE-94BF-90839E95C950}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -275,6 +307,11 @@ Global
 		{AA87988F-6CAB-49CC-8574-B62CB0910D9A} = {399DCF96-9760-4AF2-91E4-3257C7685523}
 		{23FE5DDF-87CA-4142-AAD5-E72979DF0D27} = {399DCF96-9760-4AF2-91E4-3257C7685523}
 		{1A1DBC79-6E2C-4C0B-BEE1-F35B62B54260} = {399DCF96-9760-4AF2-91E4-3257C7685523}
+		{965CA2A6-34DD-45E2-859B-AD3060A07779} = {C8D5274F-AC00-46C7-1F8D-E88E81087A52}
+		{AA9461BC-3C0D-464E-BB98-86FC136466DA} = {C8D5274F-AC00-46C7-1F8D-E88E81087A52}
+		{EA290651-D483-4ED6-9A46-3F84A19964AF} = {C8D5274F-AC00-46C7-1F8D-E88E81087A52}
+		{B2D2279A-E7C1-47FE-BC92-8D9D50FCDF22} = {C8D5274F-AC00-46C7-1F8D-E88E81087A52}
+		{76DAE4B1-88EA-4CAE-94BF-90839E95C950} = {C8D5274F-AC00-46C7-1F8D-E88E81087A52}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {539A9BD2-522D-4917-BB62-C64A5EE944F9}

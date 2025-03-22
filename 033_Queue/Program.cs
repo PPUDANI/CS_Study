@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 
+int a;
 namespace _033_Queue
 {
     internal class Program
