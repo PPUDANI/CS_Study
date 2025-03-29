@@ -24,3 +24,8 @@ namespace Single_Risponsibility
     public class Audio : Component { }
 
 }
+
+// 정리
+// 작은 클래스들이 관리가 쉬움.
+// 기능을 한곳에 모아두면 커지면 커질수록 기능 수정이 힘들어지고 분리또한 어려움.
+// 기능들을 잘게 분리시켜서 조립하는 방식으로 짜면 개발을 효율적으로 할 수 있음.

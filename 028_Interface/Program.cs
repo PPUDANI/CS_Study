@@ -1,54 +1,96 @@
 ﻿namespace _028_Interface
 {
-    class Actor()
-    {
+    //class Actor()
+    //{
 
-    }
+    //}
 
-    class Bullet : Actor
-    {
-        public void CollisionCheck(Actor? _Object)
-        {
-            IHitBulletInterface? Inter = _Object as IHitBulletInterface;
+    //class Bullet : Actor
+    //{
+    //    public void CollisionCheck(Actor? _Object)
+    //    {
+    //        IHitBulletInterface? Inter = _Object as IHitBulletInterface;
             
-            if (Inter != null)
-            {
-                Inter.HitInteraction();
-            }
-        }
+    //        if (Inter != null)
+    //        {
+    //            Inter.HitInteraction();
+    //        }
+    //    }
+    //}
+
+    //interface IHitBulletInterface
+    //{
+    //    void HitInteraction();
+    //}
+
+    //class Human : Actor, IHitBulletInterface
+    //{
+    //    public void HitInteraction()
+    //    {
+    //        Console.WriteLine("윽!");
+    //    }
+    //}
+
+    //class Dog : Actor, IHitBulletInterface
+    //{
+    //    public void HitInteraction()
+    //    {
+    //        Console.WriteLine("깨갱!");
+    //    }
+    //}
+
+
+    public interface IA
+    {
+        public void FuncA();
     }
 
-    interface IHitBulletInterface
+    public interface IB : IA
     {
-        void HitInteraction();
+        public void FuncB();
     }
 
-    class Human : Actor, IHitBulletInterface
+    public interface IC : IA
     {
-        public void HitInteraction()
+        public void FuncC();
+    }
+
+    public class CA : IB, IC
+    {
+        public void FuncA() 
         {
-            Console.WriteLine("윽!");
+            Console.WriteLine("A");
+        }
+        public void FuncB() 
+        {
+            Console.WriteLine("B");
+        }
+        public void FuncC() 
+        {
+            Console.WriteLine("C");
         }
     }
 
-    class Dog : Actor, IHitBulletInterface
+    public interface ID : IB, IC
     {
-        public void HitInteraction()
-        {
-            Console.WriteLine("깨갱!");
-        }
+        public void FuncD();
     }
 
     internal class Program
     {
         static void Main(string[] args)
         {
-            Bullet bullet = new Bullet();
-            Human human = new Human();
-            Dog dog = new Dog();
+            //Bullet bullet = new Bullet();
+            //Human human = new Human();
+            //Dog dog = new Dog();
 
-            bullet.CollisionCheck(human);
-            bullet.CollisionCheck(dog);
+            //bullet.CollisionCheck(human);
+            //bullet.CollisionCheck(dog);
+
+            CA a = new CA();
+            a.FuncA();
+            a.FuncB();
+            a.FuncC();
         }
     }
 }
